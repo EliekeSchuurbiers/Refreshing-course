@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<link rel="stylesheet" type="text/css" href="styles.css">
+<html>
+
+<head>
+
+    <title> Een simpele pagina</title>
+</head>
+
+<body>
+    <header class="head-box">
+        <h1 class="black-border">Een simpele html lay-out</h1>
+    </header>
+    <nav class="black-border">
+        <a href="index.html">Home</a>
+        <a href="https://www.grafilieke.com">Grafilieke</a>
+        <a href="about.html">About</a>
+        <a href="blog.html">Blog</a>
+        <a href="formulier.html">Contact</a>
+    </nav>
+    <main class="main-box">
+        <form name="contact" method="POST" data-netlify="true">
+            <label for="Naam">Naam:</label><br>
+            <input type="text" name="Naam"><br>
+            <label for="Email">Email:</label><br>
+            <input type="email" name="Email"><br>
+            <label for="Tel">Telefoonnummer:</label><br>
+            <input type="number" name="Tel"><br>
+            <label for="Age">Geboortedatum:</label><br>
+            <input type="date" name="Age"><br><br>
+            <label for="Gender">Geslacht:</label><br>
+            <input type="radio" name="Gender"> Man
+            <input type="radio" name="Gender"> Vrouw
+            <input type="radio" name="Gender"> Niet gespecificeerd
+            <input type="radio" name="Gender"> Wil ik niet zeggen <br><br>
+            <label for="Kitchen"> Favoriete keuken:</label><br>
+            <input type="checkbox" name="Kitchen"> Frans
+            <input type="checkbox" name="Kitchen"> Italiaans
+            <input type="checkbox" name="Kitchen"> Spaans
+            <input type="checkbox" name="Kitchen"> Arabisch<br><br>
+
+            <label for="Color"> Kleur Schort:</label><br>
+            <input type="color"><br><br>
+            <label for="Biography">Vertel eens wat over jezelf...</label><br>
+            <textarea cols="50"></textarea><br>
+            <label for="Recipe">Welk gerecht wil je met ons delen?</label><br><br>
+
+            <input type="file" name="Recipe"><br><br>
+            <label for="Website">Waar kunnen we meer over je vinden?</label><br>
+            <input type="url"><br><br>
+
+            <input type="reset">
+
+            <input type="submit">
+
+
+        </form>
+
+
+    </main>
+    <footer class="foot-box">refresing course</footer>
+
+
+
+
+
+</body>
+
+</html>
