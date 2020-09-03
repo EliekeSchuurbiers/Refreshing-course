@@ -1,0 +1,102 @@
+.Container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(15, 1fr);
+    height: 800px;
+    }
+.site-header{
+    background-color: lightblue;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.site-main{
+    background-color: lightcoral;
+    grid-row-start: 3;
+    grid-row-end: 10;
+}
+.widget-area{
+    background-color: lightgreen;
+    grid-row-start: 10;
+    grid-row-end: 13;
+}
+.site-footer{
+    background-color: lightpink;
+    grid-row-start: 13;
+    grid-row-end: 15;
+}
+
+@media (min-width:768px){
+    
+    .Container {
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(15, 1fr);
+        height: 800px;
+        }  
+        .site-header{
+            background-color: lightblue;
+            grid-row-start: 1;
+            grid-row-end: -1;
+        }
+        .site-main{
+            background-color: lightcoral;
+            grid-row-start: 1;
+            grid-row-end: 10;
+            grid-column-start: 2;
+            grid-column-end: -1;
+           
+        }
+        .widget-area{
+            background-color: lightgreen;
+            grid-row-start: 10;
+            grid-row-end: 14;
+            grid-column-start: 2;
+            grid-column-end: -1;
+        }
+        .site-footer{
+            background-color: lightpink;
+            grid-row-start: 14;
+            grid-row-end: -1;
+            grid-column-start: 2;
+            grid-column-end: -1;
+        }
+  
+  }
+
+  @media (min-width:1024px){
+   
+    .Container {
+        display: grid;
+        grid-template-columns: repeat(7,1fr);
+        grid-template-rows: repeat(15, 1fr);
+        height: 800px;
+        }  
+        .site-header{
+            background-color: lightblue;
+            grid-row-start: 1;
+            grid-row-end: -1;
+        }
+        .site-main{
+            background-color: lightcoral;
+            grid-row-start: 1;
+            grid-row-end: 14;
+            grid-column-start: 2;
+            grid-column-end: 7;
+           
+        }
+        .widget-area{
+            background-color: lightgreen;
+            grid-row-start: 1;
+            grid-row-end: -1;
+            grid-column-start: 7;
+            grid-column-end: -1;
+        }
+        .site-footer{
+            background-color: lightpink;
+            grid-row-start: 14;
+            grid-row-end: -1;
+            grid-column-start: 2;
+            grid-column-end: 7;
+        }
+  
+  }
